@@ -1,0 +1,139 @@
+/* General
+ -----------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* 
+-----------------------------------------------------------------------------*/
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273, 75%, 66%) , hsl(240, 73%, 65%));
+}
+
+main {
+  display: flex;
+}
+
+/* Containers
+-----------------------------------------------------------------------------*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+} 
+
+.container-accordion {
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding-left: 420px;
+  padding-top: 70px;
+  padding-right: 10px;
+  padding-bottom: 70px;
+  width: 72%;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Container-Accordion (content - div - accordion= panel
+-----------------------------------------------------------------------------*/
+h1 {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
+
+/* Accordion
+-----------------------------------------------------------------------------*/
+.div-accordion{
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  width: 85%;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: hsl(238, 29%, 16%);
+    /* cursor: url('../images/balon.png');  */
+    cursor: pointer;
+    padding: 18px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active {
+    color: hsl(237, 12%, 33%);
+    font-weight: bolder;
+  }
+  
+  .active .img-icon {
+    transform: rotate(180deg);
+    
+  }
+
+  .accordion:hover {  
+    color: hsl(14, 88%, 65%);
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 10px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    color: hsl(240, 6%, 50%);
+    padding-bottom: 15px;
+    padding-left: 0;
+    
+  }
+  .panel p {
+    line-height: 1.5;
+    margin-right: 20px;
+    
+  }
+  
+  .img-icon {
+    height: 8px;
+  }
+
+
+  .img_bg {
+    position: absolute;
+    max-width: 100%;
+    top: -120px;
+    left: -250px;
+    clip-path: inset(28% 0 0 60%);
+  }
+
+  .img_woman {
+    position: absolute;
+    max-width: 100%;
+    top: 180px;
+    left: 170px;
+    clip-path: inset(0 0 0 17%);
+  }
+
+  .img_box {
+    position: absolute;
+    top: 280px;
+    left: 140px;
+  }
+
+.attribution {
+  text-align: center;
+  padding: 30px;
+  color: hsl(238, 29%, 16%);
+}
