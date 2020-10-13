@@ -28,7 +28,18 @@ $list: $soft_violet, $soft_blue;
 @mixin transform($property) {
     transform: $property;
 }
+/* next media queries
+$small: 375px;
+$large: 1440px;
 
+.smth {
+  @media screen and (max-width: $small) {
+    
+  }
+  @media screen and (min-width: $large) {
+    
+  }
+} */
 
 /* General
 -----------------------------------------------------------------------------*/
@@ -53,18 +64,19 @@ body {
 .container-accordion {
     border-radius: 20px;
     background-color: #ffffff;
-    padding: 65px 10px 100px 400px;
-    width: 55%;
+    padding: 140px 15px 25px 15px;
+    width: 90%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 150px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 430px;
+    height: 450px;
 }
 
 h1 {
     font-weight: 700;
     color: $verydark_desaturated_blue;
     margin-bottom: 0.7em;
+    text-align: center;
 }
 
 
@@ -72,15 +84,16 @@ h1 {
 -----------------------------------------------------------------------------*/
 .div-accordion{
     border-bottom: 1px solid $light_grayish_blue;
-    width: 85%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .accordion {
     background-color: #ffffff;
     color: $verydark_grayish_blue;
-    cursor: pointer;
-    padding: 18px;
-    padding-bottom: 10px;
+    cursor: url('hand-cursor.png'), pointer;
+    padding: 10px;
+    padding-top: 10px;
     padding-left: 0;
     text-align: left;
     border: none;
@@ -106,16 +119,17 @@ h1 {
 
 
 .panel {
-    padding: 0 5px 15px 0;
+    padding: 0 10px 15px 0;
     background-color: white;
     display: none;
     overflow: hidden;
     color: $dark_grayish_blue;
+
 }
 
 .panel p {
     line-height: 1.5;
-    margin-right: 20px;   
+    margin-right: 10px;   
 }
 
 /* Images
@@ -132,32 +146,35 @@ h1 {
 
 .img_bg {
     @extend .imgs_gral;
-    top: -120px;
-    left: -80px;
-    clip-path: inset(28% 0 0 53%);
+    top: 5px;
+    left: 48px;
 }
 
 .img_woman {
     @extend .imgs_gral;
-    top: 130px;
-    left: 240px;
-    clip-path: inset(0 0 0 16%);
+    top: 30px;
+    left: 55px;
 }
 
 .img_box {
     @extend .imgs_gral;
-    top: 240px;
-    left: 220px;
+    top: 90px;
+    left: 45px;
 }
 
 /*
 -------------------------------------------------------------------------------*/
 .attribution {
     text-align: center;
-    padding: 15px;
     color: #4a4e69;
     margin-top: 25px;
+    display: block;
+    justify-content: center;
 }
+
 a {
     color: #a0c4ff;
+}
+.attribution p {
+    margin: 5px;
 }
