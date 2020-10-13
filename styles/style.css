@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 /* General
 -----------------------------------------------------------------------------*/
 * {
@@ -18,40 +18,31 @@ body {
   background: linear-gradient(top, #af67e9, #6565e7);
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 /* Containers
 -----------------------------------------------------------------------------*/
-.container {
-  margin: 0 auto;
-}
-
 .container-accordion {
   border-radius: 20px;
   background-color: #ffffff;
-  padding: 70px 10px 70px 420px;
-  width: 60%;
+  padding: 65px 10px 100px 400px;
+  width: 55%;
   margin: 0 auto;
-  margin-top: 110px;
+  margin-top: 80px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 430px;
 }
 
 h1 {
-  font-weight: bolder;
+  font-weight: 700;
   color: #1d1e35;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.7em;
 }
 
 /* Accordion
 -----------------------------------------------------------------------------*/
 .div-accordion {
   border-bottom: 1px solid #e7e7e9;
-  width: 90%;
+  width: 85%;
 }
 
 .accordion {
@@ -72,6 +63,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  line-height: 1.5;
 }
 
 .active {
@@ -105,6 +97,7 @@ h1 {
 -------------------------------------------------------------------------------*/
 .img-icon {
   height: 8px;
+  margin-top: 4px;
 }
 
 .imgs_gral, .img_bg, .img_woman, .img_box {
@@ -113,22 +106,22 @@ h1 {
 }
 
 .img_bg {
-  top: -60px;
-  left: -50px;
-  -webkit-clip-path: inset(26% 0 5% 40%);
-          clip-path: inset(26% 0 5% 40%);
+  top: -120px;
+  left: -80px;
+  -webkit-clip-path: inset(28% 0 0 53%);
+          clip-path: inset(28% 0 0 53%);
 }
 
 .img_woman {
-  top: 150px;
-  left: 215px;
-  -webkit-clip-path: inset(0 0 0 14%);
-          clip-path: inset(0 0 0 14%);
+  top: 130px;
+  left: 240px;
+  -webkit-clip-path: inset(0 0 0 16%);
+          clip-path: inset(0 0 0 16%);
 }
 
 .img_box {
-  top: 260px;
-  left: 190px;
+  top: 240px;
+  left: 220px;
 }
 
 /*
@@ -136,7 +129,11 @@ h1 {
 .attribution {
   text-align: center;
   padding: 15px;
-  color: #4a4b5e;
+  color: #4a4e69;
   margin-top: 25px;
+}
+
+a {
+  color: #a0c4ff;
 }
 /*# sourceMappingURL=style.css.map */
