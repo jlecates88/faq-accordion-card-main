@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-/* next media queries
-$small: 375px;
-$large: 1440px;
-
-.smth {
-  @media screen and (max-width: $small) {
-    
-  }
-  @media screen and (min-width: $large) {
-    
-  }
-} */
 /* General
 -----------------------------------------------------------------------------*/
 * {
@@ -42,6 +30,35 @@ body {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 450px;
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+
+@media only screen and (min-width: 600px) {
+  .container-accordion {
+    padding-left: 300px;
+    padding-right: 50px;
+    padding-top: 90px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-accordion {
+    width: 70%;
+    padding-top: 80px;
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container-accordion {
+    width: 55%;
+    padding-left: 390px;
+    padding-right: 70px;
+    padding-top: 70px;
+  }
 }
 
 h1 {
@@ -49,6 +66,13 @@ h1 {
   color: #1d1e35;
   margin-bottom: 0.7em;
   text-align: center;
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    text-align: left;
+  }
 }
 
 /* Accordion
@@ -62,7 +86,7 @@ h1 {
 .accordion {
   background-color: #ffffff;
   color: #4a4b5e;
-  cursor: url("hand-cursor.png"), pointer;
+  cursor: pointer;
   padding: 10px;
   padding-top: 10px;
   padding-left: 0;
@@ -121,17 +145,109 @@ h1 {
 
 .img_bg {
   top: 5px;
-  left: 48px;
+  left: 43px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+
+@media only screen and (min-width: 600px) {
+  .img_bg {
+    top: 230px;
+    left: 30px;
+    -webkit-clip-path: inset(50% 0 0 0);
+            clip-path: inset(50% 0 0 0);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .img_bg {
+    height: 300px;
+    top: 150px;
+    left: 70px;
+    -webkit-clip-path: inset(0 0 0 25%);
+            clip-path: inset(0 0 0 25%);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .img_bg {
+    height: 700px;
+    top: -90px;
+    left: -85px;
+    -webkit-clip-path: inset(28% 0 0 54%);
+            clip-path: inset(28% 0 0 54%);
+  }
 }
 
 .img_woman {
   top: 30px;
-  left: 55px;
+  left: 50px;
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+
+@media only screen and (min-width: 600px) {
+  .img_woman {
+    top: 260px;
+    left: 35px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .img_woman {
+    height: 220px;
+    top: 190px;
+    left: 83px;
+    -webkit-clip-path: inset(0 0 0 22%);
+            clip-path: inset(0 0 0 22%);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .img_woman {
+    height: 300px;
+    top: 150px;
+    left: 230px;
+    -webkit-clip-path: inset(0 0 0 18%);
+            clip-path: inset(0 0 0 18%);
+  }
 }
 
 .img_box {
-  top: 90px;
-  left: 45px;
+  top: 100px;
+  left: 40px;
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+
+@media only screen and (min-width: 600px) {
+  .img_box {
+    top: 330px;
+    left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .img_box {
+    height: 120px;
+    top: 280px;
+    left: 80px;
+    -webkit-clip-path: inset(0 0 0 22%);
+            clip-path: inset(0 0 0 22%);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .img_box {
+    height: 150px;
+    top: 260px;
+    left: 220px;
+    -webkit-clip-path: inset(0 0 0 22%);
+            clip-path: inset(0 0 0 22%);
+  }
 }
 
 /*
@@ -151,6 +267,6 @@ a {
 }
 
 .attribution p {
-  margin: 5px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
