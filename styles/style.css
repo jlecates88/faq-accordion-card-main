@@ -39,7 +39,8 @@ body {
   .container-accordion {
     padding-left: 300px;
     padding-right: 50px;
-    padding-top: 90px;
+    padding-top: 70px;
+    margin-top: 110px;
     height: 400px;
   }
 }
@@ -47,8 +48,6 @@ body {
 @media only screen and (min-width: 992px) {
   .container-accordion {
     width: 70%;
-    padding-top: 80px;
-    margin-top: 110px;
   }
 }
 
@@ -57,7 +56,6 @@ body {
     width: 55%;
     padding-left: 390px;
     padding-right: 70px;
-    padding-top: 70px;
   }
 }
 
@@ -118,11 +116,17 @@ h1 {
   color: #f47c57;
 }
 
+div.panel {
+  display: none;
+}
+
+div.panel.show {
+  display: block !important;
+}
+
 .panel {
   padding: 0 10px 15px 0;
   background-color: white;
-  display: none;
-  overflow: hidden;
   color: #787887;
 }
 
@@ -254,16 +258,12 @@ h1 {
 -------------------------------------------------------------------------------*/
 .attribution {
   text-align: center;
-  color: #4a4e69;
+  color: #ACAFC4;
   margin-top: 25px;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 a {
-  color: #a0c4ff;
+  color: #D391D3;
 }
 
 .attribution p {

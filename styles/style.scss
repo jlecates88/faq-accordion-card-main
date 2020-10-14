@@ -64,15 +64,14 @@ body {
     @media only screen and (min-width: 600px) {
         padding-left: 300px;
         padding-right: 50px;
-        padding-top: 90px;
+        padding-top: 70px;
+        margin-top: 110px;
         height: 400px;
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
         width: 70%;
-        padding-top: 80px;
-        margin-top: 110px;
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -80,7 +79,6 @@ body {
         width: 55%;
         padding-left: 390px;
         padding-right: 70px;
-        padding-top: 70px;
     } 
 }
 
@@ -135,11 +133,17 @@ h1 {
     color: $softred;
 }
 
+div.panel {
+    display: none;
+}
+
+div.panel.show {
+    display: block !important;
+}
+
 .panel {
     padding: 0 10px 15px 0;
     background-color: white;
-    display: none;
-    overflow: hidden;
     color: $dark_grayish_blue;
 }
 
@@ -247,14 +251,12 @@ h1 {
 -------------------------------------------------------------------------------*/
 .attribution {
     text-align: center;
-    color: #4a4e69;
+    color: #ACAFC4;
     margin-top: 25px;
-    display: block;
-    justify-content: center;
 }
 
 a {
-    color: #a0c4ff;
+    color: #D391D3;
 }
 
 .attribution p {
