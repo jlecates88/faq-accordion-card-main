@@ -62,28 +62,34 @@ main {
     background-image: url(../images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
+    display: block;
     padding-top: 1.7em;
     position: absolute;
-    border: 2px solid salmon;
 
     @media only screen and (min-width: 992px) {
         background-image: url(../images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center;
         background-size: cover;
-        top: 100px;
-        left: 120px;
-        height: 420px;
+        top: -60px;
+        left: -230px;
+        height: 100%;
+        width: 60%;
     }
 
 }
 .img_woman{
+    padding-right: 30px;
+    top: 50px;
+
     @media only screen and (min-width: 992px) {
-    display: none;
+        display: none;
     }
 }
+
 .img_woman_desktop {
-    float: left;
+    margin-top: 150px;
+    margin-left: 330px;
 
     @media only screen and (max-width: 768px) {
     display: none;
@@ -122,7 +128,7 @@ h1 {
     color: $verydark_desaturated_blue;
     font-weight: 700;
     font-size: 2em;
-    padding-top: 4.5em;
+    padding-top: 4em;
     padding-bottom: 1.3em;
     text-align: center;
 
