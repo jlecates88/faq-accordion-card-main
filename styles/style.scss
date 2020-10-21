@@ -20,8 +20,8 @@ $kumbh_sans: 'Kumbh Sans', sans-serif;
 // Gradient
 $colors_body: $soft_violet, $soft_blue;
 
-@mixin gradient($direction, $list) {
-    background: linear-gradient($direction, $list);
+@mixin gradient($direction, $colors_body) {
+    background: linear-gradient($direction, $colors_body);
 }
 
 // Transform
