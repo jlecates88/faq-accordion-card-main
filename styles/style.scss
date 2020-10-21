@@ -62,7 +62,6 @@ main {
     background-image: url(../images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
-    display: block;
     padding-top: 1.7em;
     position: absolute;
 
@@ -75,6 +74,8 @@ main {
         left: -230px;
         height: 100%;
         width: 60%;
+        clip-path: inset(145px 0 0 398px);
+        z-index: 10;
     }
 
 }
@@ -90,11 +91,13 @@ main {
 .img_woman_desktop {
     margin-top: 150px;
     margin-left: 330px;
+    z-index: 50;
 
     @media only screen and (max-width: 768px) {
     display: none;
     }
 }
+
 /* Accordions
 ---------------------------------------------------------------------*/
 .card {
@@ -104,6 +107,7 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 90%;
     height: 510px;
+    
 
     @media only screen and (min-width: 992px) {
         width: 75%;
