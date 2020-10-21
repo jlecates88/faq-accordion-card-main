@@ -48,7 +48,7 @@ body {
     font-family: $kumbh_sans, sans-serif;
     font-size: 12px;
     min-height: 100%;
-    @include gradient(to bottom, $colors_body);
+    @include gradient(top, $colors_body);
 }
 
 main {
@@ -77,8 +77,8 @@ main {
         clip-path: inset(145px 0 0 398px);
         z-index: 10;
     }
-
 }
+
 .img_woman{
     padding-right: 30px;
     top: 50px;
@@ -91,10 +91,21 @@ main {
 .img_woman_desktop {
     margin-top: 150px;
     margin-left: 330px;
-    z-index: 50;
+    z-index: 70;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 991px) {
     display: none;
+    }
+}
+
+.img_box_desktop {
+    position: absolute;
+    left: 75px;
+    top: 245px;
+    z-index: 1500;
+
+    @media only screen and (max-width: 991px) {
+        display: none;
     }
 }
 
@@ -202,12 +213,12 @@ div.panel.show {
 -------------------------------------------------------------------------------*/
 .attribution {
     text-align: center;
-    color: #ACAFC4;
-    margin-top: 25px;
+    color: #7FC9EB;
+    margin-top: 10px;
 }
 
 a {
-    color: #D391D3;
+    color: #7FEBA1;
 }
 
 .attribution p {

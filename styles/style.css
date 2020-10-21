@@ -19,7 +19,7 @@ body {
   font-size: 12px;
   min-height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
-  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  background: linear-gradient(top, #af67e9, #6565e7);
 }
 
 main {
@@ -71,11 +71,24 @@ main {
 .img_woman_desktop {
   margin-top: 150px;
   margin-left: 330px;
-  z-index: 50;
+  z-index: 70;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .img_woman_desktop {
+    display: none;
+  }
+}
+
+.img_box_desktop {
+  position: absolute;
+  left: 75px;
+  top: 245px;
+  z-index: 1500;
+}
+
+@media only screen and (max-width: 991px) {
+  .img_box_desktop {
     display: none;
   }
 }
@@ -195,12 +208,12 @@ div.panel.show {
 -------------------------------------------------------------------------------*/
 .attribution {
   text-align: center;
-  color: #ACAFC4;
-  margin-top: 25px;
+  color: #7FC9EB;
+  margin-top: 10px;
 }
 
 a {
-  color: #D391D3;
+  color: #7FEBA1;
 }
 
 .attribution p {
