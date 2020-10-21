@@ -65,7 +65,7 @@ main {
     padding-top: 1.7em;
     position: absolute;
 
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 1200px) {
         background-image: url(../images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
         background-position: center;
@@ -83,7 +83,7 @@ main {
     padding-right: 30px;
     top: 50px;
 
-    @media only screen and (min-width: 991px) {
+    @media only screen and (min-width: 1199px) {
         display: none;
     }
 }
@@ -93,7 +93,7 @@ main {
     margin-left: 330px;
     z-index: 70;
 
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
     display: none;
     }
 }
@@ -104,7 +104,7 @@ main {
     top: 245px;
     z-index: 1500;
 
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
         display: none;
     }
 }
@@ -120,7 +120,7 @@ main {
     height: 510px;
     
 
-    @media only screen and (min-width: 991px) {
+    @media only screen and (min-width: 1200px) {
         width: 75%;
         margin-top: 7em;
         height: 480px;
@@ -129,10 +129,10 @@ main {
 
 .container-accordion {
     margin: 0 auto;
-    padding: 1em;
-    width: 100%;
+    padding: 0.5em;
+    width: 85%;
 
-    @media only screen and (min-width: 991px) {
+    @media screen and (min-width: 1200px) {
         width: 40%;
         margin-right: 8em;
         padding: 0;
@@ -147,7 +147,7 @@ h1 {
     padding-bottom: 1.3em;
     text-align: center;
 
-    @media only screen and (min-width: 991px) {
+    @media only screen and (min-width: 1200px) {
         text-align: left;
     }
 }
