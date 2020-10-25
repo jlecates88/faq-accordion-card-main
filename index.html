@@ -10,80 +10,71 @@
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel=stylesheet href="styles/style.css">
 
 </head>
 
 <body>
 
   <main>
-    <div class= "container-images">
-      <img class="img_woman" src="images/illustration-woman-online-mobile.svg" alt="woman stand up front a screen answering clients questions">
-      <img class="img_woman_desktop" src="images/illustration-woman-online-desktop.svg" alt="woman stand up front a screen answering clients questions">
-    </div>
+    <!-- Images -->
+    <section class="img-container">
+      <img class="img-container__woman--mobile" src="images/illustration-woman-online-mobile.svg"
+        alt="woman stand up front a screen answering clients questions">
+      <img class="img-container__woman--desktop" src="images/illustration-woman-online-desktop.svg"
+        alt="woman stand up front a screen answering clients questions">
+    </section>
 
-    <img class="img_box_desktop" src="/images/illustration-box-desktop.svg" alt= "little box with an arroba symbol on it">
-    
-    <div class="card">
-      <div class="container-accordion">
-        <h1>FAQ</h1>
-      
-          <div class="accordion">
-              <p>How many team members can I invite?</p>
-              <img class="img-icon" src="../images/icon-arrow-down.svg" alt="icon arrow display answer down">
-          </div>
-          <div class="panel">
-              <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the
+    <!-- Accordion collapsable -->    
+      <section class="accordion-container">
+        <h1 class="accordion-container__title">FAQ</h1>
+
+        <div class="accordion-item">
+          <h2 class="accordion-item__title">How many team members can I invite?</h2>
+          <img class="accordion-item__icon" src="../images/icon-arrow-down.svg" alt="icon arrow display answer down">
+        
+          <div class="accordion-item__text">
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the
               Premium plan.</p>
           </div>
-          
-          <div class="accordion">
-              <p>What is the maximum file upload size?</p>
-              <img class="img-icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
-              </div>
-          <div class="panel">
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-item__title">What is the maximum file upload size?</h2>
+          <img class="accordion-item__icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
+          <div class="accordion-item__text">
             <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
           </div>
+        </div>
 
-          <div class="accordion">
-              <p>How do I reset my password?</p>
-              <img class="img-icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
-          </div>
-          <div class="panel">
-              <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+        <div class="accordion-item">
+          <h2 class="accordion-item__title">How do I reset my password?</h2>
+          <img class="accordion-item__icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
+          <div class="accordion-item__text">
+            <p>Click “Forgot password” from the login page or “Change password” from your profile page.
               A reset link will be emailed to you.</p>
           </div>
-      
-          <div class="accordion">
-              <p>Can I cancel my subscription?</p>
-              <img class="img-icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
-          </div>
-          <div class="panel">
-              <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-          </div>
-        
-          <div class="accordion">
-              <p>Do you provide additional support?</p>
-              <img class="img-icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
-          </div>
-          <div class="panel">
-              <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-          </div>
-        
-      </div><!-- end of container-accordion -->
-    </div><!-- end of card -->
+        </div>
 
+        <div class="accordion-item">
+          <h2 class="accordion-item__title">Can I cancel my subscription?</h2>
+          <img class="accordion-item__icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
+          <div class="accordion-item__text">
+            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-item__title">Do you provide additional support?</h2>
+          <img class="accordion-item__icon" src="images/icon-arrow-down.svg" alt="icon arrow display answer down">
+          <div class="accordion-item__text">
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </div>
+      </section><!-- end of accordion_container -->
+          
   </main>
 
-
-  <div class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
-    <p>Coded by <a href="https://github.com/Aman-sgz">Amanda Gerez</a></p>
-  </div>
-
-  </div>
-
-  <script src="js/app.js"></script>
 </body>
 
 </html>
