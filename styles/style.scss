@@ -63,24 +63,24 @@ main {
     background-repeat: no-repeat;
     background-position: center bottom;
     position: absolute;
-    padding-top: 2em;    
+    padding-top: 2rem;
 
-    @media screen and (min-width: 1360px) {
+    @media screen and (min-width: 1200px) {
         background-image: url(../images/bg-pattern-desktop.svg);
         background-size: cover;
-        background-position: 40% 70%;
-        height: 480px;
-        width: 65%;
-        top: 85px;
-        left: -230px;
+        background-position: 40% 60%;
+        height: 500px;
+        width: 70%;
+        top: 140px;
+        left: -380px;
     }
 }
 
 .img-container__woman--mobile {
-    padding-right: 2em;
-    padding-bottom: 1em;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
 
-    @media screen and (min-width: 1360px) {
+    @media screen and (min-width: 1200px) {
         display: none;
     }
 }
@@ -88,34 +88,38 @@ main {
 .img-container__woman--desktop {
     display: none;
 
-    @media screen and (min-width: 1360px) {
+    @media screen and (min-width: 1200px) {
         display: block;
         position: absolute;
-        left: 400px;
-        top: 50px;
+        left: 470px;
+        top: 80px;
+    }
+}
+
+.img-container__box--desktop {
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+        position: absolute;
+        left: 450px;
+        top: 200px;
     }
 }
 
 /* Accordions
 ---------------------------------------------------------------------*/
-.accordion-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 11em;
-    padding-top: 4em;
+.faq-container {
+    margin: 9rem auto 2rem auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
     background-color: $white; 
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 90%;
 
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 1200px) {
         width: 75%;
-    }
-
-    @media screen and (min-width: 1360px) {
-        width: 65%;
-        margin-top: 7em;
-        height: 480px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -123,59 +127,73 @@ main {
     }
 }
 
-.accordion-container__title {
-    padding-top: 3em;
+.faq-container__title {
+    padding-top: 4rem;
+    font-weight: 700;
     text-align: center;
     color: $verydark_desaturated_blue;
 
-    @media screen and (min-width: 1360px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 0;
-        margin-right: 12.4em;
+        padding-right: 22rem;
     }
 }
 
-/* agregar pointer para desktop y transition y hover*/
-.accordion-item {
-    padding: 1.5em;
-    color: $verydark_grayish_blue;
+#accordion {
+    padding: 1rem 1.5rem;
 
-    @media screen and (min-width: 480px) {
-        margin: 0 auto;
-        width: 75%;
-    }
-
-    @media screen and (min-width: 1360px) {
-        margin-right: 0.5em ;
+    @media screen and (min-width: 1200px) {
         width: 45%;
+    }    
+}
+
+.accordion__title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $light_grayish_blue;
+}
+
+@media screen and (min-width: 1200px) {
+    .accordion__title:hover {
+        color: $softred;
+        cursor: pointer;
     }
 }
 
-
-.accordion-item__title {
-    display: inline;
-    font-size: small;
-    font-weight: 400;
-
-    @media screen and (min-width: 1360px) {
-        cursor: pointer;
-        :hover {
-            color: $softred;
-        }
+.accordion__title::after {
+    content: url('/images/icon-arrow-down.svg');
+    transform: rotate(0);
+    transition: 0.3s;
 }
 
-.accordion-item__icon {
-    height: 12px;
+.accordion__title--active::after {
+    transform: rotate(180deg);
 }
 
-.accordion-item__text {
-    padding-right: 1em;
+.accordion__title--active {
+    color: $verydark_desaturated_blue;
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.accordion__text {
+    margin: 0;
+    max-height: 0;   
+    overflow: hidden;
+    transform: max-height 0.3s;
+
+    padding-right: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: $dark_grayish_blue;
-    border-bottom: 0.2em solid $light_grayish_blue;
-
-    @media screen and (min-width: 1360px) {
-        padding-right: 2em;
-    }
 }
+
+.accordion__text--active {
+    max-height: 300px;
+    overflow: auto;
+    border-bottom: 1px solid $light_grayish_blue;
 }
