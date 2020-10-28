@@ -25,10 +25,10 @@ $light_grayish_blue: hsl(240, 5%, 91%);
 $kumbh_sans: 'Kumbh Sans', sans-serif;
 
 // Gradient body background
-$colors_body: $soft_violet, $soft_blue;
+$colors_gradient: $soft_violet, $soft_blue;
 
-@mixin gradient($direction, $colors_body) {
-    background: linear-gradient($direction, $colors_body);
+@mixin gradient($direction, $colors_gradient) {
+    background: linear-gradient($direction, $colors_gradient);
 }
 
 // Transform accordion_icon
@@ -42,43 +42,49 @@ html {
     min-height: 100%;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 /* 
 -----------------------------------------------------------------------------*/
 body {
     font-family: $kumbh_sans, sans-serif;
     font-size: 12px;
     min-height: 100%;
-    @include gradient(to bottom right, $colors_body);
+    @include gradient(to bottom right, $colors_gradient);
 }
 
-main {
-    display: flex;
-    justify-content: center;
-}
 
 /* Images
 ---------------------------------------------------------------------------- */
 .img-container {
     background-image: url(../images/bg-pattern-mobile.svg);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: bottom;
+    max-width: 70%;  
     position: absolute;
-    padding-top: 2rem;
-
+    top: 4.5rem;
+    z-index: 10;    
+    
     @media screen and (min-width: 1200px) {
         background-image: url(../images/bg-pattern-desktop.svg);
         background-size: cover;
-        background-position: 40% 60%;
+        background-position: 80% 80%;
         height: 500px;
-        width: 70%;
-        top: 140px;
-        left: -380px;
+        width: 100%;
+        top: 0;
+        left: -340px;
     }
 }
 
 .img-container__woman--mobile {
-    padding-right: 2rem;
-    padding-bottom: 1rem;
+    position: relative;
+    top: -25px;
+    left: -15px;
+    transform: scale(1.1, 1.1);
 
     @media screen and (min-width: 1200px) {
         display: none;
@@ -91,18 +97,8 @@ main {
     @media screen and (min-width: 1200px) {
         display: block;
         position: absolute;
-        left: 470px;
-        top: 80px;
-    }
-}
-
-.img-container__box--desktop {
-    display: none;
-    @media screen and (min-width: 1200px) {
-        display: block;
-        position: absolute;
-        left: 450px;
-        top: 200px;
+        left: 240px;
+        top: 30px;
     }
 }
 
@@ -110,20 +106,23 @@ main {
 ---------------------------------------------------------------------*/
 .faq-container {
     margin: 9rem auto 2rem auto;
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
     background-color: $white; 
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 90%;
-
+    max-width: 90%;
+    
     @media screen and (min-width: 1200px) {
+        margin-top: 5rem;
         width: 75%;
         height: 500px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding-right: 7em;
+        position: relative;
+        overflow: hidden;
     }
 }
 
@@ -157,10 +156,10 @@ main {
     border-bottom: 1px solid $light_grayish_blue;
 }
 
-@media screen and (min-width: 1200px) {
-    .accordion__title:hover {
-        color: $softred;
-        cursor: pointer;
+    @media screen and (min-width: 1200px) {
+        .accordion__title:hover {
+            color: $softred;
+            cursor: pointer;
     }
 }
 

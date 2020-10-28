@@ -359,6 +359,15 @@ html {
   min-height: 100%;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* 
 -----------------------------------------------------------------------------*/
 body {
@@ -369,40 +378,37 @@ body {
   background: linear-gradient(to bottom right, #af67e9, #6565e7);
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 /* Images
 ---------------------------------------------------------------------------- */
 .img-container {
   background-image: url(../images/bg-pattern-mobile.svg);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom;
+  max-width: 70%;
   position: absolute;
-  padding-top: 2rem;
+  top: 4.5rem;
+  z-index: 10;
 }
 
 @media screen and (min-width: 1200px) {
   .img-container {
     background-image: url(../images/bg-pattern-desktop.svg);
     background-size: cover;
-    background-position: 40% 60%;
+    background-position: 80% 80%;
     height: 500px;
-    width: 70%;
-    top: 140px;
-    left: -380px;
+    width: 100%;
+    top: 0;
+    left: -340px;
   }
 }
 
 .img-container__woman--mobile {
-  padding-right: 2rem;
-  padding-bottom: 1rem;
+  position: relative;
+  top: -25px;
+  left: -15px;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 @media screen and (min-width: 1200px) {
@@ -419,21 +425,8 @@ main {
   .img-container__woman--desktop {
     display: block;
     position: absolute;
-    left: 470px;
-    top: 80px;
-  }
-}
-
-.img-container__box--desktop {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .img-container__box--desktop {
-    display: block;
-    position: absolute;
-    left: 450px;
-    top: 200px;
+    left: 240px;
+    top: 30px;
   }
 }
 
@@ -441,17 +434,18 @@ main {
 ---------------------------------------------------------------------*/
 .faq-container {
   margin: 9rem auto 2rem auto;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   padding-bottom: 2rem;
   background-color: #fff;
   border-radius: 20px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 90%;
+  max-width: 90%;
 }
 
 @media screen and (min-width: 1200px) {
   .faq-container {
+    margin-top: 5rem;
     width: 75%;
     height: 500px;
     display: -webkit-box;
@@ -465,6 +459,8 @@ main {
         -ms-flex-align: end;
             align-items: flex-end;
     padding-right: 7em;
+    position: relative;
+    overflow: hidden;
   }
 }
 
