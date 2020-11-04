@@ -1,14 +1,14 @@
 // Style guides
-@import'_fonts.scss';
-@import'_variables.scss';
+@import'config/_fonts.scss';
+@import'config/_variables.scss';
 
 // Mixins
-@import '_mixins.scss';
+@import 'mixins/_mixins.scss';
 
 // General styles
-@import 'normalize.scss';
-@import '_base.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
 
 // Blocks
-@import '_accordions.scss';
-@import '_images.scss';
+@import 'blocks/_accordion.scss';
+@import 'blocks/_images.scss';

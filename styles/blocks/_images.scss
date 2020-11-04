@@ -10,7 +10,9 @@
     max-width: 70%;  
     position: absolute;
     top: 4rem;
-    z-index: 10;    
+    z-index: 10;
+    margin: 0 auto;
+    border: 2px solid green;
     
     @media screen and (min-width: 1200px) {
         background-image: url(../images/bg-pattern-desktop.svg);
@@ -19,7 +21,7 @@
         height: 500px;
         width: 100%;
         top: 0;
-        left: -340px;        
+        left: -340px;      
     }
 }
 
@@ -53,4 +55,3 @@
         border: 2px solid blue;
     }
 }
-
