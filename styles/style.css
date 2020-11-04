@@ -387,7 +387,7 @@ body {
   background-position: bottom;
   max-width: 70%;
   position: absolute;
-  top: 4.5rem;
+  top: 4rem;
   z-index: 10;
 }
 
@@ -427,6 +427,17 @@ body {
     position: absolute;
     left: 240px;
     top: 30px;
+  }
+}
+
+.img-container__box--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .img-container__box--desktop {
+    display: block;
+    border: 2px solid blue;
   }
 }
 
