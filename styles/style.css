@@ -373,9 +373,36 @@ html {
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
-  min-height: 100%;
+  min-height: 100vh;
   background: -webkit-gradient(linear, left top, right bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(to bottom right, #af67e9, #6565e7);
+}
+
+footer {
+  margin: 1rem auto;
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: plum;
+}
+
+.attribution a {
+  color: #5e7cf3;
 }
 
 /* Accordions
@@ -393,9 +420,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .faq-container {
-    margin-top: 5rem auto;
-    width: 75%;
-    height: 500px;
+    margin: 5rem auto;
+    width: 70%;
+    height: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -405,7 +432,7 @@ body {
             flex-direction: row;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: end;
+            align-items: flex-end;
     position: relative;
     overflow: hidden;
   }
@@ -418,7 +445,18 @@ body {
 @media screen and (min-width: 1200px) {
   #accordion-container {
     width: 45%;
-    border: 2px solid green;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: -400px;
   }
 }
 
@@ -506,18 +544,16 @@ body {
   top: 4rem;
   z-index: 10;
   margin: 0 auto;
-  border: 2px solid green;
 }
 
 @media screen and (min-width: 1200px) {
   .img-container {
     background-image: url(../images/bg-pattern-desktop.svg);
     background-size: cover;
-    background-position: 80% 80%;
-    height: 500px;
+    height: 650px;
     width: 100%;
-    top: 0;
-    left: -340px;
+    top: -8.5rem;
+    left: -310px;
   }
 }
 
@@ -543,8 +579,8 @@ body {
   .img-container__woman--desktop {
     display: block;
     position: absolute;
-    left: 240px;
-    top: 30px;
+    left: 190px;
+    top: 170px;
   }
 }
 
