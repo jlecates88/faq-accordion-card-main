@@ -15,12 +15,12 @@
         background-image: url(../images/bg-pattern-desktop.svg);
         background-size: cover;
         background-position: 100% 100%;
-        height: 600px;
-        width: 100%;
-        top: 5.9rem;
-        left: -300px;
-        transform: scale(1.5);
+        transform: scale(2);
         position: relative;
+        top: -5rem;
+        left: -350px;
+        min-height: 650px;
+        width: 100%;
     }
 }
 
@@ -40,10 +40,10 @@
 
     @media screen and (min-width: 1200px) {
         display: block;
-      //  position: absolute;
-        margin-top: 70px;
-        margin-left: 300px;
-        height: 360px;
+        position: absolute;
+        margin-top: 230px;
+        transform: translateX(70%);;
+        height: 280px;
         z-index: 40;
     }
 }
@@ -55,7 +55,7 @@
     @media screen and (min-width: 1200px) {
         display: block;
         position: absolute; 
-        top: 410px;
+        top: 370px;
         left: 70px;
         height: 250px;
         z-index: 120;
