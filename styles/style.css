@@ -589,12 +589,15 @@ footer {
   overflow: auto;
   border-bottom: 1px solid #e7e7e9;
   padding-left: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0;
   width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
   .accordion__answer--active {
     font-size: 15px;
+    padding-top: 1rem;
     margin-bottom: 0;
     width: 470px;
   }
