@@ -14,7 +14,7 @@
     @media screen and (min-width: 1200px) {
         background-image: url(../images/bg-pattern-desktop.svg);
         background-size: cover;
-        background-position: 100% 100%;
+        background-position: 100% 0;
         transform: scale(2);
         position: relative;
         top: -5rem;
@@ -48,7 +48,7 @@
     }
 }
 
-// Animación, mover la caja hacia la izquierda cada vez que hago hover sobre las preguntas
+// Animación, mover la caja hacia la izquierda cada vez que el mouse pasa sobre el accordion
 .img__desktop-box {
     display: none;
 
@@ -59,9 +59,10 @@
         left: 70px;
         height: 250px;
         z-index: 120;
+        transition: transform 200ms ease-in-out;
     }
 }
 
-.anim-left::after {
-    transform: translateX(-3rem);
+.img__desktop-box--active {
+    transform: translateX(-37px);
 }

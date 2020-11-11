@@ -9,3 +9,12 @@ accordion.addEventListener('click', e => {
       e.target.classList.toggle('accordion__question--active'); //roto flecha y negrita al button
     }
 });
+
+
+document.getElementById("accordion-container").addEventListener("mouseover", () => {
+  document.querySelector(".img__desktop-box").classList.add("img__desktop-box--active");
+})
+
+document.getElementById("accordion-container").addEventListener("mouseout", () => {
+  document.querySelector(".img__desktop-box").classList.remove("img__desktop-box--active");     
+});

@@ -566,7 +566,7 @@ footer {
           transform: max-height 0.3s;
   padding-right: 2rem;
   margin-top: 0;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.5;
   width: 100%;
 }
@@ -621,7 +621,7 @@ footer {
   .img-container {
     background-image: url(../images/bg-pattern-desktop.svg);
     background-size: cover;
-    background-position: 100% 100%;
+    background-position: 100% 0;
     -webkit-transform: scale(2);
             transform: scale(2);
     position: relative;
@@ -674,11 +674,15 @@ footer {
     left: 70px;
     height: 250px;
     z-index: 120;
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
   }
 }
 
-.anim-left::after {
-  -webkit-transform: translateX(-3rem);
-          transform: translateX(-3rem);
+.img__desktop-box--active {
+  -webkit-transform: translateX(-37px);
+          transform: translateX(-37px);
 }
 /*# sourceMappingURL=style.css.map */
