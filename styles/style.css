@@ -625,7 +625,7 @@ footer {
     -webkit-transform: scale(2);
             transform: scale(2);
     width: 50%;
-    left: -5rem;
+    left: -10rem;
     top: -63px;
     min-height: 650px;
   }
