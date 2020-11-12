@@ -476,7 +476,7 @@ footer {
             align-items: flex-start;
     position: relative;
     margin: 7rem 0;
-    margin-left: 670px;
+    margin-left: 600px;
     max-width: 50%;
     padding-right: 0;
     padding-left: 3rem;
@@ -625,7 +625,7 @@ footer {
     -webkit-transform: scale(2);
             transform: scale(2);
     width: 50%;
-    left: -15rem;
+    left: -22rem;
     top: -63px;
     min-height: 650px;
   }
@@ -670,7 +670,7 @@ footer {
     display: block;
     position: absolute;
     top: 370px;
-    left: 30px;
+    left: 10px;
     height: 250px;
     z-index: 120;
     -webkit-transition: -webkit-transform 200ms ease-in-out;
