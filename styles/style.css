@@ -654,9 +654,9 @@ footer {
     display: block;
     position: absolute;
     margin-top: 255px;
-    -webkit-transform: translateX(80%);
-            transform: translateX(80%);
-    height: 240px;
+    -webkit-transform: translateX(85%);
+            transform: translateX(85%);
+    height: 235px;
     z-index: 40;
   }
 }
