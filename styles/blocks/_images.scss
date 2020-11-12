@@ -40,8 +40,8 @@
     @media screen and (min-width: 1200px) {
         display: block;
         position: absolute;
-        margin-top: 230px;
-        transform: translateX(70%);
+        margin-top: 255px;
+        transform: translateX(75%);
         height: 250px;
         z-index: 40;
     }
@@ -55,7 +55,7 @@
         display: block;
         position: absolute; 
         top: 370px;
-        left: -20px;
+        left: -25px;
         height: 250px;
         z-index: 120;
         transition: transform 200ms ease-in-out;
