@@ -14,13 +14,12 @@
     @media screen and (min-width: 1200px) {
         background-image: url(../images/bg-pattern-desktop.svg);
         background-size: cover;
-        background-position: 100% 0;
+        background-position: 100% 0%;
         transform: scale(2);
-        position: relative;
-        top: -5rem;
-        left: -350px;
+        width: 50%;
+        left: -20rem;
+        top: -63px;
         min-height: 650px;
-        width: 100%;
     }
 }
 

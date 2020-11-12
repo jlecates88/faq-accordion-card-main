@@ -1,7 +1,7 @@
 /* General
 -----------------------------------------------------------------------------*/
 html {
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .faq-container {
@@ -9,8 +9,6 @@ html {
     justify-content: center;
 }
 
-/* 
------------------------------------------------------------------------------*/
 body {
     font-family: $kumbh_sans, sans-serif;
     font-size: 12px;

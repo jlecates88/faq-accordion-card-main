@@ -1,5 +1,4 @@
 const accordion = document.getElementById('accordion-container');
-//const accordionAnswer = [...document.querySelectorAll('.accordion__answer')];
 
 accordion.addEventListener('click', e => {
     const targetClass = e.target.classList;
@@ -10,7 +9,7 @@ accordion.addEventListener('click', e => {
     }
 });
 
-
+// Animación, mover la caja a la izquierda cada evento del mouse
 document.getElementById("accordion-container").addEventListener("mouseover", () => {
   document.querySelector(".img__desktop-box").classList.add("img__desktop-box--active");
 })

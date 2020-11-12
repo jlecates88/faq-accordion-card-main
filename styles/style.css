@@ -356,7 +356,7 @@ template {
 /* General
 -----------------------------------------------------------------------------*/
 html {
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .faq-container {
@@ -368,8 +368,6 @@ html {
           justify-content: center;
 }
 
-/* 
------------------------------------------------------------------------------*/
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
@@ -446,10 +444,10 @@ footer {
         -ms-flex-align: end;
             align-items: flex-end;
     position: relative;
-    overflow: hidden;
     margin: 5rem auto;
-    width: 75%;
     padding-top: 1rem;
+    width: 75%;
+    overflow: hidden;
   }
 }
 
@@ -478,9 +476,11 @@ footer {
             align-items: flex-start;
     position: relative;
     margin: 7rem 0;
+    margin-left: 670px;
     max-width: 50%;
     padding-right: 0;
     padding-left: 3rem;
+    z-index: 200;
   }
 }
 
@@ -502,9 +502,9 @@ footer {
 }
 
 .accordion__question {
+  padding: 1rem 0.5rem;
   font-size: 15px;
   font-weight: normal;
-  padding: 1rem 0.5rem;
   text-align: left;
   background-color: transparent;
   border: none;
@@ -531,25 +531,25 @@ footer {
 
 .accordion__question::after {
   content: url("/images/icon-arrow-down.svg");
+  float: right;
   -webkit-transform: rotate(0);
           transform: rotate(0);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  float: right;
 }
 
 .accordion__question--active::after {
+  float: right;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  float: right;
 }
 
 .accordion__question--active {
-  color: #1d1e35;
-  font-weight: bold;
-  border: none;
   padding-left: 0.5rem;
   padding-top: 1rem;
+  font-weight: bold;
+  color: #1d1e35;
+  border: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -560,14 +560,14 @@ footer {
 
 .accordion__answer {
   display: none;
-  color: #787887;
-  border-bottom: 1px solid #e7e7e9;
-  -webkit-transform: max-height 0.3s;
-          transform: max-height 0.3s;
   padding-right: 2rem;
   margin-top: 0;
   font-weight: normal;
+  color: #787887;
+  -webkit-transform: max-height 0.3s;
+          transform: max-height 0.3s;
   line-height: 1.5;
+  border-bottom: 1px solid #e7e7e9;
   width: 100%;
 }
 
@@ -587,18 +587,18 @@ footer {
   display: block;
   max-height: 300px;
   overflow: auto;
-  border-bottom: 1px solid #e7e7e9;
+  padding-top: 0;
   padding-left: 0.5rem;
   padding-bottom: 1rem;
-  padding-top: 0;
+  border-bottom: 1px solid #e7e7e9;
   width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
   .accordion__answer--active {
-    font-size: 15px;
     padding-top: 1rem;
     margin-bottom: 0;
+    font-size: 18px;
     width: 470px;
   }
 }
@@ -621,14 +621,13 @@ footer {
   .img-container {
     background-image: url(../images/bg-pattern-desktop.svg);
     background-size: cover;
-    background-position: 100% 0;
+    background-position: 100% 0%;
     -webkit-transform: scale(2);
             transform: scale(2);
-    position: relative;
-    top: -5rem;
-    left: -350px;
+    width: 50%;
+    left: -20rem;
+    top: -63px;
     min-height: 650px;
-    width: 100%;
   }
 }
 
