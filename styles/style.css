@@ -446,7 +446,7 @@ footer {
     position: relative;
     margin: 5rem auto;
     padding-top: 1rem;
-    width: 75%;
+    width: 85%;
     overflow: hidden;
   }
 }
@@ -654,8 +654,8 @@ footer {
     display: block;
     position: absolute;
     margin-top: 230px;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    -webkit-transform: translateX(65%);
+            transform: translateX(65%);
     height: 250px;
     z-index: 40;
   }
