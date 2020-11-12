@@ -625,7 +625,7 @@ footer {
     -webkit-transform: scale(2);
             transform: scale(2);
     width: 50%;
-    left: -10rem;
+    left: -15rem;
     top: -63px;
     min-height: 650px;
   }
@@ -654,9 +654,9 @@ footer {
     display: block;
     position: absolute;
     margin-top: 230px;
-    -webkit-transform: translateX(70%);
-            transform: translateX(70%);
-    height: 280px;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    height: 250px;
     z-index: 40;
   }
 }
