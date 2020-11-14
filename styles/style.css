@@ -359,15 +359,6 @@ html {
   min-height: 100vh;
 }
 
-.faq-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
@@ -414,6 +405,12 @@ footer {
 /* Accordions
 ---------------------------------------------------------------------*/
 .faq-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 9rem 1rem;
   padding: 3.5rem 0.5rem 2rem 0.5rem;
   background-color: #fff;
@@ -440,9 +437,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     position: relative;
     margin: 5rem auto;
     padding-top: 1rem;
@@ -471,15 +465,14 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     position: relative;
     margin: 7rem 0;
     margin-left: 550px;
     max-width: 50%;
-    padding-right: 0;
-    padding-left: 3rem;
+    padding-left: 0;
     z-index: 200;
   }
 }
@@ -495,7 +488,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .accordion__title {
     padding-top: 0.5rem;
-    padding-right: 2rem;
+    padding-right: 30rem;
     font-size: 30px;
     font-weight: bolder;
   }
@@ -520,7 +513,7 @@ footer {
   .accordion__question {
     padding-bottom: 0.5rem;
     margin-top: 1rem;
-    width: 470px;
+    width: 550px;
     font-size: 20px;
   }
   .accordion__question:hover {
@@ -580,6 +573,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .accordion__answer {
     font-size: 15px;
+    padding-right: 1rem;
   }
 }
 
@@ -599,7 +593,7 @@ footer {
     padding-top: 1rem;
     margin-bottom: 0;
     font-size: 18px;
-    width: 470px;
+    width: 550px;
   }
 }
 
@@ -625,9 +619,9 @@ footer {
     -webkit-transform: scale(2);
             transform: scale(2);
     width: 50%;
-    left: -22rem;
-    top: -63px;
-    min-height: 650px;
+    left: -30rem;
+    top: -110px;
+    min-height: 700px;
   }
 }
 
@@ -653,10 +647,10 @@ footer {
   .img-container__woman--desktop {
     display: block;
     position: absolute;
-    margin-top: 255px;
-    -webkit-transform: translateX(85%);
-            transform: translateX(85%);
-    height: 235px;
+    top: 270px;
+    -webkit-transform: translateX(355px);
+            transform: translateX(355px);
+    height: 275px;
     z-index: 40;
   }
 }
@@ -670,7 +664,7 @@ footer {
     display: block;
     position: absolute;
     top: 370px;
-    left: -25px;
+    left: -10px;
     height: 250px;
     z-index: 120;
     -webkit-transition: -webkit-transform 200ms ease-in-out;
