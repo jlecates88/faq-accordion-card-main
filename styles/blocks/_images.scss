@@ -1,67 +1,56 @@
-/* Images
----------------------------------------------------------------------------- */
 .img-container {
-    background-image: url(../images/bg-pattern-mobile.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    max-width: 70%;  
-    position: absolute;
-    top: 4rem;
-    margin: 0 auto;
-    z-index: 30;
-    
-    @media screen and (min-width: 1200px) {
-        background-image: url(../images/bg-pattern-desktop.svg);
-        background-size: cover;
-        background-position: 100% 0%;
-        transform: scale(2);
-        width: 50%;
-        left: -30rem;
-        top: -110px;
-        min-height: 700px;
+    border: 2px solid red;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: 100% 0%;
+    transform: scale(2);
+    width: 30%;
+    min-height: 700px;
+
+    @media screen and (max-width: 768px) {
+        background-image: url(../images/bg-pattern-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        min-height: 100px;
+        width: 40%;
+        
+        margin: 0 auto;
+        margin-top: -10rem;
+        transform: scale(1.5);
     }
 }
 
 .img-container__woman--mobile {
-    position: relative;
-    top: -25px;
-    left: -15px;
-    transform: scale(1.1, 1.1);
+    display: none;
 
-    @media screen and (min-width: 1200px) {
-        display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
     }
 }
 
 .img-container__woman--desktop {
-    display: none;
+   padding-left: 45px;
+   margin-top: 255px;
+   height: 260px;
 
-    @media screen and (min-width: 1200px) {
-        display: block;
-        position: absolute;
-        top: 270px;
-        transform: translateX(355px);
-        height: 275px;
-        z-index: 40;
+   @media screen and (max-width: 768px) {
+        display: none;
     }
 }
 
-// Animación, mover la caja hacia la izquierda cada vez que el mouse pasa sobre el accordion
 .img__desktop-box {
-    display: none;
+    position: absolute;
+    top: 395px;
+    left: 50px;
+    height: 240px;
+    transition: transform 200ms ease-in-out;
 
-    @media screen and (min-width: 1200px) {
-        display: block;
-        position: absolute; 
-        top: 370px;
-        left: -10px;
-        height: 250px;
-        z-index: 120;
-        transition: transform 200ms ease-in-out;
+    &--active {
+        transform: translateX(-37px);
     }
-}
 
-.img__desktop-box--active {
-    transform: translateX(-37px);
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
