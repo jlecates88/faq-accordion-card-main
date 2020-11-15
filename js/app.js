@@ -11,9 +11,9 @@ accordion.addEventListener('click', e => {
 
 // Animación, mover la caja a la izquierda cada evento del mouse
 document.getElementById("accordion-container").addEventListener("mouseover", () => {
-  document.querySelector(".img__desktop-box").classList.add("img__desktop-box--active");
+  document.querySelector(".img__box--desktop").classList.add("img__box--desktop--active");
 })
 
 document.getElementById("accordion-container").addEventListener("mouseout", () => {
-  document.querySelector(".img__desktop-box").classList.remove("img__desktop-box--active");     
+  document.querySelector(".img__box--desktop").classList.remove("img__box--desktop--active");     
 });

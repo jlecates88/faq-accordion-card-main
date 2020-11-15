@@ -21,9 +21,9 @@
 #accordion-container {
     border: 2px solid green;
     margin-top: 5rem;
-    margin-right: 1rem;
+    //margin-right: 1rem;
     padding-bottom: 2rem;
-    //width: 500px;
+    width: 50%;
 
     @media screen and (max-width: 768px) {
         text-align: center;
@@ -54,7 +54,7 @@
     font-size: 1.2rem;
     text-align: left;
     border-bottom: 1px solid $light_grayish_blue;
-    width: 500px;
+    width: 90%;
 
     &:after {
         content: url('/images/icon-arrow-down.svg');
@@ -102,7 +102,7 @@
     transform: max-height 0.3s;
     line-height: 1.5;
     border-bottom: 1px solid $light_grayish_blue;
-    width: 500px;
+    width: 90%;
 
     &--active {
         display: block;
