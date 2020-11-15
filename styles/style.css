@@ -406,16 +406,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 6rem auto;
   background-color: #fff;
   border-radius: 20px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: auto;
-  max-width: 90%;
+  width: 70%;
   overflow: hidden;
 }
 
@@ -435,9 +435,9 @@ footer {
 #accordion-container {
   border: 2px solid green;
   margin-top: 5rem;
-  margin-right: 3rem;
+  margin-right: -0.5rem;
   padding-bottom: 2rem;
-  max-width: 50%;
+  width: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -469,7 +469,7 @@ footer {
   padding-bottom: 1rem;
   background-color: transparent;
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
   border-bottom: 1px solid #e7e7e9;
   width: 500px;
@@ -519,7 +519,6 @@ footer {
   margin-top: 0;
   padding-right: 2.5rem;
   padding-left: 0.5rem;
-  font-size: 1rem;
   font-weight: normal;
   text-align: left;
   color: #787887;
@@ -535,7 +534,7 @@ footer {
   max-height: 300px;
   overflow: auto;
   border-bottom: 1px solid #e7e7e9;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -550,10 +549,10 @@ footer {
   border: 2px solid red;
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: cover;
-  background-position: 100% 0%;
+  background-position: 100% 100%;
   -webkit-transform: scale(2);
           transform: scale(2);
-  width: 30%;
+  width: 300px;
   min-height: 700px;
 }
 
@@ -581,8 +580,10 @@ footer {
 }
 
 .img-container__woman--desktop {
+  position: absolute;
   padding-left: 45px;
-  margin-top: 255px;
+  top: 235px;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -600,6 +601,7 @@ footer {
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  display: none;
 }
 
 .img__desktop-box--active {

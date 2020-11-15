@@ -1,12 +1,12 @@
 .faq-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 6rem auto;
     background-color: $white;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: auto;
-    max-width: 90%;
+    width: 70%;
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
@@ -21,9 +21,9 @@
 #accordion-container {
     border: 2px solid green;
     margin-top: 5rem;
-    margin-right: 3rem;
+    margin-right: -0.5rem;
     padding-bottom: 2rem;
-    max-width: 50%;
+    width: 500px;
 
     @media screen and (max-width: 768px) {
         text-align: center;
@@ -51,7 +51,7 @@
     padding-bottom: 1rem;
     background-color: transparent;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: left;
     border-bottom: 1px solid $light_grayish_blue;
     width: 500px;
@@ -96,7 +96,6 @@
     margin-top: 0;
     padding-right: 2.5rem;
     padding-left: 0.5rem;
-    font-size: 1rem;
     font-weight: normal;
     text-align: left;
     color: $dark_grayish_blue;
@@ -110,7 +109,7 @@
         max-height: 300px;
         overflow: auto;
         border-bottom: 1px solid $light_grayish_blue;
-        font-size: 18px;
+        font-size: 1rem;
 
         @media screen and (max-width: 768px) {
             margin: 0 auto;
