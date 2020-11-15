@@ -362,7 +362,6 @@ html {
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
-  min-height: 100vh;
   background: -webkit-gradient(linear, left top, right bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(to bottom right, #af67e9, #6565e7);
 }
@@ -406,16 +405,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 6rem auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 6rem 10rem;
   background-color: #fff;
   border-radius: 20px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: auto;
-  width: 70%;
+  max-width: 85%;
   overflow: hidden;
 }
 
@@ -435,9 +434,8 @@ footer {
 #accordion-container {
   border: 2px solid green;
   margin-top: 5rem;
-  margin-right: -0.5rem;
+  margin-right: 1rem;
   padding-bottom: 2rem;
-  width: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -453,7 +451,7 @@ footer {
 .accordion__title {
   padding-top: 0.5rem;
   padding-bottom: 0.7rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   color: #1d1e35;
 }
@@ -549,11 +547,11 @@ footer {
   border: 2px solid red;
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: cover;
-  background-position: 100% 100%;
+  background-position: 100% 0%;
   -webkit-transform: scale(2);
           transform: scale(2);
-  width: 300px;
-  min-height: 700px;
+  width: 280px;
+  min-height: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -581,9 +579,8 @@ footer {
 
 .img-container__woman--desktop {
   position: absolute;
-  padding-left: 45px;
-  top: 235px;
-  display: none;
+  top: 300px;
+  left: -30px;
 }
 
 @media screen and (max-width: 768px) {

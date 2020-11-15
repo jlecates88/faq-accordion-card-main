@@ -2,10 +2,10 @@
     border: 2px solid red;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-size: cover;
-    background-position: 100% 100%;
+    background-position: 100% 0%;
     transform: scale(2);
-    width: 300px;
-    min-height: 700px;
+    width: 280px;
+    min-height: 500px;
 
     @media screen and (max-width: 768px) {
         background-image: url(../images/bg-pattern-mobile.svg);
@@ -31,10 +31,11 @@
 
 .img-container__woman--desktop {
     position: absolute;
-    padding-left: 45px;
-    top: 235px;
+    top: 300px;
+    left: -30px;
+  //transform: scale(1.5);
     //height: 260px;
-display: none;
+
    @media screen and (max-width: 768px) {
         display: none;
     }

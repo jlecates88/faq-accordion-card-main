@@ -1,12 +1,12 @@
 .faq-container {
     display: flex;
-    justify-content: space-evenly;
-    margin: 6rem auto;
+    justify-content: space-between;
+    margin: 6rem 10rem;
     background-color: $white;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: auto;
-    width: 70%;
+    max-width: 85%;
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
@@ -21,9 +21,9 @@
 #accordion-container {
     border: 2px solid green;
     margin-top: 5rem;
-    margin-right: -0.5rem;
+    margin-right: 1rem;
     padding-bottom: 2rem;
-    width: 500px;
+    //width: 500px;
 
     @media screen and (max-width: 768px) {
         text-align: center;
@@ -37,7 +37,7 @@
 .accordion__title {
     padding-top: 0.5rem;
     padding-bottom: 0.7rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     color: $verydark_desaturated_blue;
 
