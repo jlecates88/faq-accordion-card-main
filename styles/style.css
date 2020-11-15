@@ -424,7 +424,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 3rem auto;
+    margin: 7rem auto;
     overflow: visible;
   }
 }
@@ -541,7 +541,6 @@ footer {
 }
 
 .img-container {
-  border: 2px solid red;
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: cover;
   background-position: top right;
@@ -557,8 +556,9 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+    margin: -3rem auto;
     min-height: 100px;
-    width: 40%;
+    width: 35%;
   }
 }
 
@@ -569,6 +569,10 @@ footer {
 @media screen and (max-width: 768px) {
   .img__woman--mobile {
     display: block;
+    margin-top: 15px;
+    padding-right: 10px;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
   }
 }
 
