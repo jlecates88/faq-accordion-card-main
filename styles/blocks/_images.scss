@@ -2,7 +2,7 @@
     border: 2px solid red;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-size: cover;
-    background-position: 100% 0%;
+    background-position: top right;
     transform: scale(2);
     width: 30%;
     min-height: 500px;
@@ -15,8 +15,8 @@
         min-height: 100px;
         width: 40%;
         
-        margin: 0 auto;
-        margin-top: -10rem;
+   //     margin: 0 auto;
+     //   margin-top: -10rem;
         //transform: scale(1.5);
     }
 }

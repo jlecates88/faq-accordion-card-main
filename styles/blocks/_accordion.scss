@@ -11,9 +11,7 @@
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        margin-top: 14rem;
-        padding-top: 45px;
-        width: 90%;
+        margin: 3rem auto;
         overflow: visible;
     }
 }
@@ -21,14 +19,12 @@
 #accordion-container {
     border: 2px solid green;
     margin-top: 5rem;
-    //margin-right: 1rem;
     padding-bottom: 2rem;
     width: 50%;
 
     @media screen and (max-width: 768px) {
         text-align: center;
-        margin: auto;
-        padding: 0.5rem;
+        padding: 0.3rem;
         padding-bottom: 1.5rem;
         width: 100%;
     }
@@ -79,8 +75,8 @@
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 15px;
-        width: 305px;
+        font-size: 0.8rem;
+        width: 100%;
     }
 
     &:hover {
@@ -100,21 +96,21 @@
     text-align: left;
     color: $dark_grayish_blue;
     transform: max-height 0.3s;
-    line-height: 1.5;
     border-bottom: 1px solid $light_grayish_blue;
     width: 90%;
 
     &--active {
         display: block;
         max-height: 300px;
+        line-height: 1.5;
         overflow: auto;
         border-bottom: 1px solid $light_grayish_blue;
         font-size: 1rem;
 
         @media screen and (max-width: 768px) {
-            margin: 0 auto;
-            font-size: 13px;
-            width: 305px;
+            margin-right: 0.5rem;
+            font-size: 0.8rem;  
+            width: 100%;
         }
     }
 }
