@@ -409,14 +409,13 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 4rem auto;
+  margin: 6rem auto;
   background-color: #fff;
   border-radius: 20px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: auto;
-  min-height: 650px;
-  width: 80%;
+  max-width: 90%;
   overflow: hidden;
 }
 
@@ -436,9 +435,9 @@ footer {
 #accordion-container {
   border: 2px solid green;
   margin-top: 5rem;
-  padding-right: 1rem;
+  margin-right: 3rem;
   padding-bottom: 2rem;
-  width: 50%;
+  max-width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -470,10 +469,10 @@ footer {
   padding-bottom: 1rem;
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: left;
   border-bottom: 1px solid #e7e7e9;
-  width: 550px;
+  width: 500px;
 }
 
 .accordion__question:after {
@@ -520,7 +519,7 @@ footer {
   margin-top: 0;
   padding-right: 2.5rem;
   padding-left: 0.5rem;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: normal;
   text-align: left;
   color: #787887;
@@ -528,7 +527,7 @@ footer {
           transform: max-height 0.3s;
   line-height: 1.5;
   border-bottom: 1px solid #e7e7e9;
-  width: 550px;
+  width: 500px;
 }
 
 .accordion__answer--active {
@@ -568,8 +567,6 @@ footer {
     width: 40%;
     margin: 0 auto;
     margin-top: -10rem;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
   }
 }
 
@@ -586,7 +583,6 @@ footer {
 .img-container__woman--desktop {
   padding-left: 45px;
   margin-top: 255px;
-  height: 260px;
 }
 
 @media screen and (max-width: 768px) {
