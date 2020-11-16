@@ -557,8 +557,8 @@ footer {
     background-repeat: no-repeat;
     background-position: bottom;
     margin: -3rem auto;
-    min-height: 100px;
-    width: 35%;
+    height: 100px;
+    width: 100px;
   }
 }
 
