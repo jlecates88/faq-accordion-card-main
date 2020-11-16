@@ -546,8 +546,8 @@ footer {
   background-position: top right;
   -webkit-transform: scale(2);
           transform: scale(2);
-  width: 30%;
-  min-height: 500px;
+  width: 270px;
+  height: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -578,9 +578,9 @@ footer {
 
 .img__woman--desktop {
   position: absolute;
-  height: 190px;
-  top: 11rem;
-  left: 2.5rem;
+  height: 170px;
+  top: 12.5rem;
+  left: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -591,7 +591,7 @@ footer {
 
 .img__box--desktop {
   position: absolute;
-  top: 330px;
+  top: 350px;
   left: 50px;
   height: 210px;
   -webkit-transition: -webkit-transform 200ms ease-in-out;
