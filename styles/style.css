@@ -430,7 +430,6 @@ footer {
 }
 
 #accordion-container {
-  border: 2px solid green;
   margin-top: 5rem;
   padding-bottom: 2rem;
   width: 50%;
@@ -543,6 +542,7 @@ footer {
 .img-container {
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: top right;
   -webkit-transform: scale(2);
           transform: scale(2);
@@ -577,7 +577,10 @@ footer {
 }
 
 .img__woman--desktop {
-  margin-top: 140px;
+  position: absolute;
+  height: 190px;
+  top: 11rem;
+  left: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -589,8 +592,8 @@ footer {
 .img__box--desktop {
   position: absolute;
   top: 330px;
-  left: 40px;
-  height: 240px;
+  left: 50px;
+  height: 210px;
   -webkit-transition: -webkit-transform 200ms ease-in-out;
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
